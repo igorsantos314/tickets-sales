@@ -1,0 +1,30 @@
+### Find all events
+GET http://localhost:3000/events
+
+### Create Event
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+    "name": "New Event",
+    "description": "This is a new event",
+    "date": "2024-10-01T00:00:00",
+    "price": 100
+}
+
+### Get Event by id
+GET http://localhost:3000/events/c8b8d378-f019-4ff5-82a2-52e0db28198e
+
+### Update Event
+PATCH http://localhost:3000/events/08bf49b7-503f-40cc-add1-7c8344537888
+Content-Type: application/json
+
+{
+    "name": "Luta de boxe 2",
+    "description": "Boxe event",
+    "date": "2024-10-01T00:00:00",
+    "price": 120
+}
+
+### Delete Event
+DELETE http://localhost:3000/events/08bf49b7-503f-40cc-add1-7c8344537888
